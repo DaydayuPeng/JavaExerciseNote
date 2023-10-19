@@ -57,6 +57,7 @@ public class TwoColorBallLottery{
 	 		for(int j = 0; j < winningNumber.length; j++){
 	 			if(winningNumber[j] == userNumber[i]){
 	 				count++;
+					break；
 	 			}
 	 		}
 	 	}
