@@ -23,7 +23,7 @@ public class JudgesScoring{
 			int score = sc.nextInt();
 			if(score >= 0 && score <= 100){
 				arr[i] = score;
-				i++;
+				i++;//此处是重点，只有这if里面的条件为真时，i才会自增
 			}else{
 				System.out.println("输入错误，请输入 0 - 100之间的数字！");
 			}
