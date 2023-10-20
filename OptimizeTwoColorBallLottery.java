@@ -43,7 +43,7 @@ public class TwoColorBallLottery{
 	public static boolean existOrNot(int[] arr,int num){
 		for(int i = 0;i < arr.length - 1; i++){
 			if (arr[i] == num) {
-				return false;//下面别写break了，无法访问，因为return已经结束循环了
+				return false;//下面别写break了，无法访问，因为return已经结束方法了
 			}
 		}
 		return true;
@@ -86,7 +86,7 @@ public class TwoColorBallLottery{
 	public static void compareAndPrintResult(int[] winningNumber,int[] userNumber){
 
 	 	//用户输入的号码和随机生成的号码对比，根据对比结果打印中奖情况
-	 	// userNumber[i] 和winningNumber[i] 对比 blueBall 和 userBlueBall 对比
+	 	// userNumber[i] 和winningNumber[i] 对比 
 	 	int count = 0;
 	 	for(int i = 0; i < userNumber.length - 1; i++){
 	 		for(int j = 0; j < winningNumber.length - 1; j++){
